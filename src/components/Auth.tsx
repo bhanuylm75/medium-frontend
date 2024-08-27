@@ -10,7 +10,7 @@ const Auth = () => {
   async function sendRequest() {
     console.log(postinputs)
     try {
-        const response = await axios.post("https://medium-backend-qol0.onrender.com/api/signup", postinputs);
+        const response = await axios.post("https://broklyn.onrender.com/api/signup", postinputs);
         console.log(response)
         const data = response?.data;
         console.log(data)

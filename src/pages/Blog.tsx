@@ -25,7 +25,7 @@ const Blog = () => {
   const [blog,setblog]=useState<Blog | undefined>(undefined);
   const getblog= async()=>{
    try{
-    const response=await axios.get(`https://medium-backend-qol0.onrender.com/api/singleblog/${id}`)
+    const response=await axios.get(`https://broklyn.onrender.com/api/singleblog/${id}`)
     console.log(response?.data)
     setblog(response?.data)
    }

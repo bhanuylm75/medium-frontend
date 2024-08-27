@@ -8,7 +8,7 @@ const Authsign = () => {
   async function sendRequest() {
     console.log(postinputs)
     try {
-        const response = await axios.post("https://medium-backend-qol0.onrender.com/api/signin", postinputs);
+        const response = await axios.post("https://broklyn.onrender.com/api/signin", postinputs);
         const data = response?.data;
         console.log(response)
         if(response.status===200){

@@ -7,15 +7,16 @@ import axios from "axios"
 const Blogs = () => {
   const token=localStorage.getItem("token")
   const navigate=useNavigate()
-  console.log(token)
+  //console.log(token)
   if (!token){
     navigate("/signin")
   }
 
   const [blogs ,setblogs]=useState([]);
   const allblogs= async ()=>{
+    console.log("pp")
     try{
-      const response=await axios.get("https://medium-backend-qol0.onrender.com/api/getallblogs")
+      const response=await axios.get("https://broklyn.onrender.com/api/getallblogs")
     console.log(response)
     const data=response?.data?.blogs
     setblogs(data)

@@ -21,7 +21,7 @@ export const Publish = () => {
                 }} />
                 <button onClick={async () => {
                   console.log("qhbd")
-                    const response = await axios.post("https://medium-backend-qol0.onrender.com/api/createblog/", {
+                    const response = await axios.post("https://broklyn.onrender.com/api/createblog/", {
                         title,
                         content: description,
                         userid:localStorage.getItem("userid")
